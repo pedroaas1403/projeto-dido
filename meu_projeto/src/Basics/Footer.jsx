@@ -11,7 +11,6 @@ const Footer = () => {
           <a href="#" className="social-link">Instagram</a>
           <a href="#" className="social-link">YouTube</a>
         </div>
-
         <hr className="footer-divider" />
 
         <div className="copyright">

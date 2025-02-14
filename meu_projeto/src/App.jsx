@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import Header from './Basics/Header';
 import Footer from './Basics/Footer';
+import Countdown from './Components/Countdown.js';
 import './App.css';
 
 const products = [
-  { id: 1, name: "Produto 1", price: "R$ 99,99", image: "https://via.placeholder.com/150" },
-  { id: 2, name: "Produto 2", price: "R$ 199,99", image: "https://via.placeholder.com/150" },
-  { id: 3, name: "Produto 3", price: "R$ 299,99", image: "https://via.placeholder.com/150" },
-  { id: 4, name: "Produto 4", price: "R$ 399,99", image: "https://via.placeholder.com/150" },
-  { id: 5, name: "Produto 5", price: "R$ 499,99", image: "https://via.placeholder.com/150" },
-  { id: 6, name: "Produto 6", price: "R$ 599,99", image: "https://via.placeholder.com/150" },
+  { id: 1, name: "Dropadooo", price: "R$ 99,99", image: "https://via.placeholder.com/150" },
 ];
 
 function App() {
@@ -38,14 +34,17 @@ function App() {
       />
       <main className="main-content">
         <section id="inicio">
-          <h1 className="section-title">Bem-vindo à loja</h1>
-          <div className="flexible-image">
-            aaaaaaaaaaa
+        <h1 className="section-title"> Welcome to</h1>
+        <div className="flexible-image">
+            <img className="banner30" src="./imagens/bannerteste2.png" alt="contador" />
           </div>
-          <p>Explore nossos produtos e aproveite as ofertas!</p>
+          <div>
+      <h1 className="downtext" > SHOW IN </h1>
+      <Countdown />
+           </div>
         </section>
         <section id="produtos">
-          <h1 className="section-title">Produtos</h1>
+          <h1 className="section-title">DROPS</h1>
           <div className="product-grid">
             {products.map((product) => (
               <div key={product.id} className="product-card">

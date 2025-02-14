@@ -1,0 +1,45 @@
+/* Estilos para o temporizador */
+.countdown-container {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .countdown-timer {
+    display: flex;
+    border: 3px solid #020202;
+    border-radius: 100px;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .time-unit {
+    margin: 0 15px;
+    text-align: center;
+  }
+  
+  .number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+  }
+  
+  .label {
+    font-size: 1rem;
+    color: #888;
+    text-transform: uppercase;
+  }
+  
+  /* Efeito de contagem regressiva */
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
